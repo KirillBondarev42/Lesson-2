@@ -29,6 +29,6 @@ int main ()
 	printf("b= ");
 	scanf("%d", &b); // ввод числа b
 	c = dif(a, b); // вызов функции разности
-	printf("The sum of two numbers is %d\n", c);
+	printf("The difference of two numbers is %d\n", c);
 	return 0;
 }

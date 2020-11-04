@@ -25,6 +25,47 @@ int div (int a, int b) // функция вычисления частного �
 	return c;  // возвращаем частное
 }
 
+int test_sum (int a, int b) 
+{
+	int c = sum(a, b);
+    if (c = a + b)
+    {
+    	printf("The sum works correctly\n"); // тест работы функции суммы
+    	return 0;
+    }
+}
+
+int test_dif (int a, int b) 
+{
+	int c = dif(a, b);
+    if (c = a - b)
+    {
+    	printf("The difference works correctly\n"); // тест работы функции разности
+    	return 0;
+    }
+}
+
+int test_mult (int a, int b) 
+{
+	int c = mult(a, b);
+    if (c = a * b)
+    {
+    	printf("The multiplication works correctly\n"); // тест работы функции умножения
+    	return 0;
+    }
+}
+
+int test_div (int a, int b) 
+{
+	int c = div(a, b);
+    if (c = a / b)
+    {
+    	printf("The division works correctly\n"); // тест работы функции деления
+    	return 0;
+    }
+}
+
+
 int main ()
 {
 	printf("Hello, World!\n");
@@ -60,5 +101,9 @@ int main ()
 	{
 		printf("The division cannot be performed when the divisor is 0\n"); // вывод сообщения о невозможности деления на ноль.
 	}	
+	test_sum(a, b);
+	test_dif(a, b);
+	test_mult(a, b);
+	test_div(a, b);
 	return 0;
 }
